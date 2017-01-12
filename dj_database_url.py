@@ -22,6 +22,7 @@ urlparse.uses_netloc.append('sqlite')
 urlparse.uses_netloc.append('oracle')
 urlparse.uses_netloc.append('oraclegis')
 urlparse.uses_netloc.append('redshift')
+urlparse.uses_netloc.append('mssql')
 
 DEFAULT_ENV = 'DATABASE_URL'
 
@@ -39,6 +40,7 @@ SCHEMES = {
     'oracle': 'django.db.backends.oracle',
     'oraclegis': 'django.contrib.gis.db.backends.oracle',
     'redshift': 'django_redshift_backend',
+    'mssql': 'sqlserver_ado',
 }
 
 
